@@ -75,9 +75,59 @@
     </details>
 
     <form>
+        <h2>Simple Form</h2>
         <fieldset>
-            <legend>Favourite Fruit</legend>
-            <input id="Thing 1" name="monster">
+            <legend>Which is my favourite input type?</legend>
+            <div>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label>Checkbox</label>
+            </div>
+            <div>
+                <input type="radio" id="radio" name="radio">
+                <label>Radio</label>
+            </div>
+            <div>
+                <label>Text (Type Text here)</label>
+                <input type="text" id="text" name="text">
+            </div>
+            <div>
+                <label>Select Jan 1 1970</label>
+                <input type="date">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Some other Misc questions</legend>
+            <div>
+                <label>Say why you think HTML is important</label> <br>
+                <textarea id="reason" name="reason" rows="5" cols="33">Because we need it.
+                </textarea>
+            </div>
+            <div>
+                <label for="Favourite_Class">What is my favourite CSE lower div class?</label>
+                <input list="Favourite_Class" id="ice-cream-choice" name="ice-cream-choice">
+                <datalist id="Favourite_Class">
+                    <option value="CSE11">
+                    <option value="CSE12">
+                    <option value="CSE15L">
+                    <option value="CSE20">
+                    <option value="CSE21">
+                    <option value="CSE30">
+                </datalist>
+            </div>
+            <div>
+                <label for="Favourite_Class_2">Same question, choose again.</label>
+                <select id="Favourite_Class_2">
+                    <option value="CSE11">CSE11</option>
+                    <option value="CSE12">CSE12</option>
+                    <option value="CSE15L">CSE15L</option>
+                    <option value="CSE20">CSE20</option>
+                    <option value="CSE21">CSE21</option>
+                    <option value="CSE30">CSE30</option>
+                </select>
+            </div>
+            <div>
+                <button name="button">Submit</button>
+            </div>
         </fieldset>
     </form>
 </main>
