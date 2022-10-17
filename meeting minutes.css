@@ -3,9 +3,13 @@
 
 
 h1 {
-    color: rgb(255,0,0);
+    color: rgb(0,255,0);
     font-size: 3vw;
     text-align: center;
+}
+
+h1[style="color: blue"] {
+    font-style: italic;
 }
 
 text.for-decoration {
@@ -65,10 +69,10 @@ button:hover {
 }
 
 #Favourite_Class_2 {
-
+    height: 100px;
 }
 
-fieldset details {
+fieldset, details {
     display: inline;
 }
 
@@ -78,7 +82,6 @@ div.hidden-text {
 }
 
 img {
-    display: box;
     height: 5cm;
     width: 8cm;
     /* Margins */
@@ -99,7 +102,6 @@ img {
 }
 
 video {
-    display: box;
     min-width: 8cm;
     max-width: 15cm;
     /* Margins */
@@ -132,4 +134,12 @@ video {
     body {
         background-color: yellow;
     }
+}
+
+div > text {
+    font-style: italic;
+}
+
+h3 ~ text {
+    font-style: normal;
 }
