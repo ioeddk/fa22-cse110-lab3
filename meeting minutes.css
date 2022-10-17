@@ -41,7 +41,6 @@ summary {
 nav {
     color: blueviolet;
     font-size: 0.2in;
-
 }
 
 body {
@@ -62,10 +61,41 @@ fieldset details {
     display: inline;
 }
 
- {
-    display: none;
-}
 
 div.hidden-text {
     display: none;
+}
+
+img {
+    display: box;
+    height: 5cm;
+    width: 8cm;
+    /* Margins */
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+    /* paddings */
+    padding-top: 0.5cm;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    padding-bottom: 0.5cm;
+    /* broaders */
+    border-style: dashed;
+    border-width: 0.2cm;
+    border-color: red;
+    border-radius: 3px;
+}
+
+video {
+    display: box;
+    min-width: 8cm;
+    max-width: 15cm;
+    /* Margins */
+    margin: 1cm 1cm 1cm 1cm;
+    /* paddings */
+    padding: 0.5cm 0.5cm 0.5cm 0.5cm;
+    /* broaders */
+    border: 2px solid green;
+
 }
