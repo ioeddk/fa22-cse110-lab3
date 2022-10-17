@@ -1,21 +1,73 @@
 /* This is the beginning of my css */
 
+
+
 h1 {
     color: rgb(255,0,0);
+    font-size: 3vw;
+    text-align: center;
+}
+
+text.for-decoration {
+    text-decoration: underline;
 }
 
 h2 {
     color: #00ffffff;
+    font-size: 2vmin;
 }
 
 h3 {
     color: hsl(72,59%,50%);
+    font-size: 1vmax;
+}
+
+p {
+    font-family: oswald;
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: oswald;
+    src: url("./font/Oswald-VariableFont_wght.ttf");
+}
+
+summary {
+    font-size: 1cm;
 }
 
 nav {
     color: blueviolet;
+    font-size: 0.2in;
+
 }
 
 body {
     background-color: lightslategray;
+    width: 80vm;
+    height: 80vh;
+}
+
+.menu {
+
+}
+
+#Favourite_Class_2 {
+
+}
+
+label option {
+    font: times;
+}
+
+fieldset {
+    display: inline;
+}
+
+ {
+    display: none;
+}
+
+div.hidden-text {
+    display: none;
 }
