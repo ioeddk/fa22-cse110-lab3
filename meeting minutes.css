@@ -3,20 +3,28 @@
 
 
 h1 {
-    color: rgb(255,0,0);
+    color: rgb(0,255,0);
     font-size: 3vw;
     text-align: center;
+}
+
+h1[style="color: blue"] {
+    font-style: italic;
 }
 
 text.for-decoration {
     text-decoration: underline;
 }
 
+text:active {
+    color: yellow;
+}
+
 h2 {
     color: #00ffffff;
     font-size: 2vmin;
     display: block;
-    height: 1.5cm;
+    height: 1cm;
 }
 
 h3 {
@@ -41,6 +49,9 @@ summary {
 nav {
     color: blueviolet;
     font-size: 0.2in;
+    position: absolute;
+    left: 800px;
+    top: 50px;
 }
 
 body {
@@ -53,11 +64,15 @@ body {
 
 }
 
-#Favourite_Class_2 {
-
+button:hover {
+    color: blue;
 }
 
-fieldset details {
+#Favourite_Class_2 {
+    height: 100px;
+}
+
+fieldset, details {
     display: inline;
 }
 
@@ -67,7 +82,6 @@ div.hidden-text {
 }
 
 img {
-    display: box;
     height: 5cm;
     width: 8cm;
     /* Margins */
@@ -88,7 +102,6 @@ img {
 }
 
 video {
-    display: box;
     min-width: 8cm;
     max-width: 15cm;
     /* Margins */
@@ -98,4 +111,35 @@ video {
     /* broaders */
     border: 2px solid green;
 
+    /* relative position of the video */
+    position: relative;
+    top: -20px;
+}
+
+.week3-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-rows: 55px;
+    grid-template-columns: 200px;
+    justify-items: end;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+div > text {
+    font-style: italic;
+}
+
+h3 ~ text {
+    font-style: normal;
 }
