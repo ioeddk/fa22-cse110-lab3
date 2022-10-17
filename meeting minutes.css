@@ -12,11 +12,15 @@ text.for-decoration {
     text-decoration: underline;
 }
 
+text:active {
+    color: yellow;
+}
+
 h2 {
     color: #00ffffff;
     font-size: 2vmin;
     display: block;
-    height: 1.5cm;
+    height: 1cm;
 }
 
 h3 {
@@ -41,6 +45,9 @@ summary {
 nav {
     color: blueviolet;
     font-size: 0.2in;
+    position: absolute;
+    left: 800px;
+    top: 50px;
 }
 
 body {
@@ -51,6 +58,10 @@ body {
 
 .menu {
 
+}
+
+button:hover {
+    color: blue;
 }
 
 #Favourite_Class_2 {
@@ -98,4 +109,27 @@ video {
     /* broaders */
     border: 2px solid green;
 
+    /* relative position of the video */
+    position: relative;
+    top: -20px;
+}
+
+.week3-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-rows: 55px;
+    grid-template-columns: 200px;
+    justify-items: end;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: yellow;
+    }
 }
